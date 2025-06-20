@@ -12,7 +12,7 @@ SWEP.Trivia_Class = "Assault Rifle" -- "Submachine Gun"
 SWEP.Trivia_Desc = "Stalk your prey and lay them out with this tactical sniper rifle chambered in .50 Cal." -- "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "XRK" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = ".50 BMG" -- "9x21mm Jager"
-SWEP.Primary.Ammo = "SniperPenetratedRounds" -- what ammo type the gun uses
+SWEP.Primary.Ammo = "SniperPenetratedRound" -- what ammo type the gun uses
 
 
 SWEP.ViewModel = "models/weapons/mwiii/arccw_r_mwiii_xrkstalker.mdl" -- I mean, you probably have to edit these too
@@ -107,7 +107,7 @@ SWEP.RecoilVMShake = 5 -- random viewmodel offset when shooty
 
 
 
-SWEP.Sway = 0.25
+SWEP.Sway = 0.15
 
 
 
