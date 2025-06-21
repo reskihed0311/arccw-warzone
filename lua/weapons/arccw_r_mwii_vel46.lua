@@ -12,7 +12,7 @@ SWEP.Trivia_Class = "Sub-Machine Gun" -- "Submachine Gun"
 SWEP.Trivia_Desc = "Full-auto pistol. Good damage. Slower handling and high recoil deviation." -- "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "U.S.A" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "4.6x30MM" -- "9x21mm Jager"
-
+SWEP.SubCategory = "Sub-Machine Guns"
 
 
 SWEP.ViewModel = "models/weapons/mwii/arccw_r_mwii_vel46.mdl" -- I mean, you probably have to edit these too
@@ -162,7 +162,6 @@ SWEP.Hook_SelectReloadAnimation = function(wep, anim)
         ["att_vel46_xmag"] = "_50",
 
     }
-    
     local hasSOH = false
     local magSuffix = ""
     
@@ -211,7 +210,18 @@ SWEP.AttachmentElements = {
             {ind = 5, bg = 1},
     },
     },
-
+ ["rvb"] = {
+        VMBodygroups = {
+            {ind = 4, bg = 2},
+             {ind = 2, bg = 2},
+    },
+     AttPosMods = {
+    [3] = {
+         vpos = Vector(0, -1.25, 10), -- offset that the attachment will be relative to the bone
+        vang = Angle(90, 00, -90),
+        },
+     }
+    },
 
 }
 
@@ -265,6 +275,20 @@ SWEP.Animations = {
         LHIKIn = 0.25, -- In/Out controls how long it takes to switch to regular animation.
         LHIKOut = 0.25, -- (not actually inverse kinematics)
     },
+    ["reload_soh"] = {
+        Source = "reload_soh",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2, -- third person animation to play when this animation is played
+        LHIK = true,
+        LHIKIn = 0.25, -- In/Out controls how long it takes to switch to regular animation.
+        LHIKOut = 0.25, -- (not actually inverse kinematics)
+    },
+    ["reload_empty_soh"] = {
+        Source = "reload_empty_soh",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2, -- third person animation to play when this animation is played
+        LHIK = true,
+        LHIKIn = 0.25, -- In/Out controls how long it takes to switch to regular animation.
+        LHIKOut = 0.25, -- (not actually inverse kinematics)
+    },
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2, -- third person animation to play when this animation is played
@@ -283,6 +307,22 @@ SWEP.Animations = {
     },
     ["reload_empty_50"] = {
         Source = "reload_xmag_empty",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2, -- third person animation to play when this animation is played
+        LHIK = true,
+        LHIKEaseIn = 0.1, -- how long LHIK eases in.
+        LHIKEaseOut = 0.05, -- if no value is specified then ease = lhikin
+        LHIKIn = 0.15, -- In/Out controls how long it takes to switch to regular animation.
+        LHIKOut = 0.90, -- (not actually inverse kinematics)
+    },
+   ["reload_50_soh"] = {
+        Source = "reload_xmag_soh",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2, -- third person animation to play when this animation is played
+        LHIK = true,
+        LHIKIn = 0.25, -- In/Out controls how long it takes to switch to regular animation.
+        LHIKOut = 0.25, -- (not actually inverse kinematics)
+    },
+    ["reload_empty_50_soh"] = {
+        Source = "reload_xmag_empty_soh",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2, -- third person animation to play when this animation is played
         LHIK = true,
         LHIKEaseIn = 0.1, -- how long LHIK eases in.
@@ -470,6 +510,12 @@ SWEP.Attachments = {
          }
     },
  {
+        PrintName = "Handguard",
+        DefaultAttName = "Velocity Factory",
+        Slot = "wz_vel46_hg",
+        Bone = "weapon",
+    },
+ {
         PrintName = "Muzzle",
         DefaultAttName = "Default Flash Hider",
         Slot = "muzzle_ar",
@@ -523,6 +569,6 @@ SWEP.Attachments = {
     {
         PrintName = "Perks",
         DefaultAttName = "None",
-        Slot = "uc_tp",
+        Slot = {"uc_tp","wz_perks"}
     }
 }

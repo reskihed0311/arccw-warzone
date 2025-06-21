@@ -18,12 +18,13 @@ $bodygroup "barrel"
 {
     studio "bardef.dmx"
 	blank
+	studio "barhvyxtended.dmx"
 }
 
 
 $bodygroup "mag"
 {
-    studio "magdef_wm.dmx"
+    studio "magdef.dmx"
 	studio "xmag.dmx"
 }
 
@@ -32,6 +33,7 @@ $bodygroup "muzzle"
 {
     studio "muzzle_bardef.dmx"
 	blank
+	studio "muzzle_barhvyxtended.dmx"
 }
 
 $bodygroup "stock"
@@ -45,7 +47,6 @@ $bodygroup "pgrip"
     studio "pgripdef.dmx"
 	blank
 }
-
 
 
 

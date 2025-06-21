@@ -13,7 +13,7 @@ SWEP.Trivia_Desc = "A fully automatic Battle Rifle designed to send hard-hitting
 SWEP.Trivia_Manufacturer = "U.S.A" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "5.56 NATO" -- "9x21mm Jager"
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
-
+SWEP.SubCategory = "Battle Rifles"
 
 SWEP.ViewModel = "models/weapons/mwiii/arccw_r_mwii_mtz762.mdl" -- I mean, you probably have to edit these too
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"

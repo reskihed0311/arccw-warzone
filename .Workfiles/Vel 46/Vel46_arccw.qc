@@ -18,6 +18,7 @@ $bodygroup "barrel"
 {
     studio "bardef.dmx"
 	blank
+	studio "barhvyxtended.dmx"
 }
 
 
@@ -32,6 +33,7 @@ $bodygroup "muzzle"
 {
     studio "muzzle_bardef.dmx"
 	blank
+	studio "muzzle_barhvyxtended.dmx"
 }
 
 $bodygroup "stock"
@@ -151,6 +153,29 @@ $sequence "reload" {
 	fps 30
 }
 
+
+$sequence "reload_soh" {
+	"anims\reload_soh.dmx"
+	activity "ACT_VM_IDLE" 1
+	{ event 5004 9 "r_mwii_vel46.MagOutEmpty" }
+	{ event 5004 23 "r_mwii_vel46.MagHitEmpty" }
+    { event 5004 24 "r_mwii_vel46.MagInEmpty" }
+	snap
+	fps 30
+}
+
+
+$sequence "reload_empty_soh" {
+	"anims\reload_empty_soh.dmx"
+	activity "ACT_VM_IDLE" 1
+	{ event 5004 9 "r_mwii_vel46.MagOutEmpty" }
+	{ event 5004 23 "r_mwii_vel46.MagHitEmpty" }
+    { event 5004 24 "r_mwii_vel46.MagInEmpty" }
+	{ event 5004 35 "r_mwii_vel46.BoltCatch" }
+	snap
+	fps 30
+}
+
 $sequence "reload_xmag" {
 	"anims\reload_xmag.dmx"
 	activity "ACT_VM_IDLE" 1
@@ -176,6 +201,7 @@ $sequence "reload_empty" {
 }
 
 
+
 $sequence "reload_xmag_empty" {
 	"anims\reload_xmag_empty.dmx"
 	activity "ACT_VM_IDLE" 1
@@ -188,6 +214,31 @@ $sequence "reload_xmag_empty" {
 	snap
 	fps 30
 }
+
+$sequence "reload_xmag_soh" {
+	"anims\reload_xmag_soh.dmx"
+	activity "ACT_VM_IDLE" 1
+	{ event 5004 9 "r_mwii_vel46.50MagRel" }
+	{ event 5004 10 "r_mwii_vel46.50MagOut" }
+	{ event 5004 42 "r_mwii_vel46.50MagHit" }
+	{ event 5004 48 "r_mwii_vel46.50MagIn" }
+	snap
+	fps 30
+}
+
+
+$sequence "reload_xmag_empty_soh" {
+	"anims\reload_xmag_empty_soh.dmx"
+	activity "ACT_VM_IDLE" 1
+	{ event 5004 9 "r_mwii_vel46.50MagRel" }
+	{ event 5004 10 "r_mwii_vel46.50MagOut" }
+	{ event 5004 42 "r_mwii_vel46.50MagHit" }
+	{ event 5004 48 "r_mwii_vel46.50MagIn" }
+	{ event 5004 60 "r_mwii_vel46.BoltCatch" }
+	snap
+	fps 30
+}
+
 
 $sequence "draw_empty" {
 	"anims\draw_empty.dmx"

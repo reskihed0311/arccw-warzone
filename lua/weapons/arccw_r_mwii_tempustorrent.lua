@@ -12,12 +12,12 @@ SWEP.Trivia_Class = "Marksman Rifle" -- "Submachine Gun"
 SWEP.Trivia_Desc = "This hard-hitting DMR from the Tempus Armament offers the versatility of the M4 Platform and the velocity and impact of 7.62 rounds." -- "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "U.S.A" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "7.62 NATO" -- "9x21mm Jager"
-
+SWEP.SubCategory = "Marksman Rifles"
 
 
 SWEP.ViewModel = "models/weapons/mwii/arccw_r_mwii_tempustorrent.mdl" -- I mean, you probably have to edit these too
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
-SWEP.MirrorWorldModel = "models/weapons/mwii/wm/arccw_r_mwii_tempustorrent_wm.mdl" -- Use this to set the mirrored viewmodel to a different model, without any floating speedloaders or cartridges you may have. Needs MirrorVMWM
+SWEP.MirrorWorldModel = "models/weapons/mwii/arccw_r_mwii_tempustorrent_wm.mdl" -- Use this to set the mirrored viewmodel to a different model, without any floating speedloaders or cartridges you may have. Needs MirrorVMWM
 
 
 

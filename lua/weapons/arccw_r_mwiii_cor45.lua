@@ -12,7 +12,7 @@ SWEP.Trivia_Class = "Handgun" -- "Submachine Gun"
 SWEP.Trivia_Desc = "Semi-auto ballistic pistol chambered in .45 Auto. Delivers excellent handling and recoil control." -- "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "Corvus Defense" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = ".45 AUTO" -- "9x21mm Jager"
-
+SWEP.SubCategory = "Pistols"
 
 
 SWEP.ViewModel = "models/weapons/mwiii/arccw_r_mwiii_cor45.mdl" -- I mean, you probably have to edit these too

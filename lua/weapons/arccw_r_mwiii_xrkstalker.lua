@@ -13,7 +13,7 @@ SWEP.Trivia_Desc = "Stalk your prey and lay them out with this tactical sniper r
 SWEP.Trivia_Manufacturer = "XRK" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = ".50 BMG" -- "9x21mm Jager"
 SWEP.Primary.Ammo = "SniperPenetratedRound" -- what ammo type the gun uses
-
+SWEP.SubCategory = "Sniper Rifles"
 
 SWEP.ViewModel = "models/weapons/mwiii/arccw_r_mwiii_xrkstalker.mdl" -- I mean, you probably have to edit these too
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"

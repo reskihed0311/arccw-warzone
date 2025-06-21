@@ -12,7 +12,7 @@ SWEP.Trivia_Class = "Assault Rifle" -- "Submachine Gun"
 SWEP.Trivia_Desc = "The M13B features a short-stroke piston system that allows for a high rate of rife and low recoil." -- "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "Bruen" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "5.56 NATO" -- "9x21mm Jager"
-
+SWEP.SubCategory = "Assault Rifles"
 
 
 SWEP.ViewModel = "models/weapons/mwii/arccw_r_mwii_m13.mdl" -- I mean, you probably have to edit these too

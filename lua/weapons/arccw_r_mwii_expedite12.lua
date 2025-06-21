@@ -12,7 +12,7 @@ SWEP.Trivia_Class = "Semi-Auto Shotgun" -- "Submachine Gun"
 SWEP.Trivia_Desc = "A practiced hand can control the Expedite 12's recoil to devastating effects." -- "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "U.S.A" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "12 Gauge" -- "9x21mm Jager"
-
+SWEP.SubCategory = "Shotguns"
 
 
 SWEP.ViewModel = "models/weapons/mwii/arccw_r_mwii_expedite12.mdl" -- I mean, you probably have to edit these too

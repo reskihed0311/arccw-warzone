@@ -12,7 +12,7 @@ SWEP.Trivia_Class = "Submachine Gun" -- "Submachine Gun"
 SWEP.Trivia_Desc = "The Lachmann Sub's compact, fully automatic 9mm receiver is a masterpiece of stability, mobility and lethality." -- "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "Germany" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "9MM Parabellum" -- "9x21mm Jager"
-
+SWEP.SubCategory = "Sub-Machine Guns"
 
 
 SWEP.ViewModel = "models/weapons/mwii/arccw_r_mwii_lachmannsub.mdl" -- I mean, you probably have to edit these too

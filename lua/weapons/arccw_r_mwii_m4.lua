@@ -12,7 +12,7 @@ SWEP.Trivia_Class = "Assault Rifle" -- "Submachine Gun"
 SWEP.Trivia_Desc = "The flagship rifle of the M4 Platform. This reliable workhorse is a jack-of-all-trades that performs well in most combat scenarios." -- "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "U.S.A" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "5.56 NATO" -- "9x21mm Jager"
-
+SWEP.SubCategory = "Assault Rifles"
 
 
 SWEP.ViewModel = "models/weapons/mwii/arccw_r_mwii_m4.mdl" -- I mean, you probably have to edit these too

@@ -12,6 +12,7 @@ SWEP.Trivia_Class = "Assault Rifle" -- "Submachine Gun"
 SWEP.Trivia_Desc = "Full-auto assault rifle. Excellent handling and mobility. Moderate range but on the lower end of assault rifle firepower." -- "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "United Kingdom" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "5.56 NATO" -- "9x21mm Jager"
+SWEP.SubCategory = "Assault Rifles"
 
 
 

@@ -12,7 +12,7 @@ SWEP.Trivia_Class = "Assault Rifle" -- "Submachine Gun"
 SWEP.Trivia_Desc = "Full-auto pistol. Good damage. Slower handling and high recoil deviation." -- "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "Soviet Union" -- "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "9MM Makarov" -- "9x21mm Jager"
-
+SWEP.SubCategory = "Pistols"
 
 
 SWEP.ViewModel = "models/weapons/bo6/arccw_r_bo6_grekhova.mdl" -- I mean, you probably have to edit these too
